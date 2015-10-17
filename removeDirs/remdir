@@ -1,16 +1,17 @@
 #!/bin/bash
 
-if [ -s remlog.txt ];
+#check if log file exists - delete
+
+if [ -s logrem.txt ];
   then
-    rm remlog.txt;
+    rm logrem.txt;
 fi
 
-
-
-  # find . -type d -empty > remlog.txt;
-  # find $1 -type d -exec echo {} \; > 1remlog.txt; 
+#find all empty folders and write to file
    
-   find $1 -type d -exec echo {} \; > remlog.txt; 
+find $1 -type d -exec echo {} \; > logrem.txt;
 
-   find $1 -depth -type d -empty 2>/dev/null -exec rmdir {} \;
+#find and delete empty folders
+
+find $1 -depth -type d -empty 2>/dev/null -exec rmdir {} \; 
 
