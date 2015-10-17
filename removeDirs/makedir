@@ -1,0 +1,7 @@
+#creating hierarchy of folders for testing
+
+mkdir test #main folder
+cd test
+mkdir -p 1/11/111/1111 2/22/222/2222 3/33 4/44/444/4444/44444
+
+echo [SUCCESS] Dirs were created
