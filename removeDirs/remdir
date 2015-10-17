@@ -18,4 +18,4 @@ if ![ -s logrem.txt ];
    echo [SUCCESS] Empty directories were removed
 else
   echo [SKIPPED] No empty directories were found
-   
+fi
