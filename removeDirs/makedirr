@@ -1,0 +1,5 @@
+cd test
+mkdir -p 1/11/111/1111
+mkdir -p /33/333
+mkdir -p 2/22/222
+echo [SUCCESS] Dir are created

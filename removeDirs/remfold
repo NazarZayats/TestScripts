@@ -1,0 +1,3 @@
+find ./test/test -type d -empty 
+rmdir {}
+
