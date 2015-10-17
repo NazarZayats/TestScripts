@@ -17,5 +17,5 @@ if [ -s logrem.txt ];
    find $1 -depth -type d -empty 2>/dev/null -exec rmdir {} \; 
    echo [SUCCESS] Empty directories were removed
 else
-  echo [SKIPPED] No empty directories were found
+  echo [WARNING] No empty directories were found
 fi
