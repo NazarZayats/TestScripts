@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mysql -u $user -p$password;
+use $db;
+select * from tone;
