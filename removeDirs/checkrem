@@ -6,11 +6,11 @@ if [ -s logrem.txt ];
       do
         if [ -d $line ]; 
         then 
-          echo Dir $line exists; 
+          echo [PASS]Dir $line exists; 
         else 
-          echo Dir $line was removed;
+          echo [PASS]Dir $line was removed;
         fi
       done;
 else
-  echo No empty folders were detected;
+  echo [FAIL]No empty folders were detected;
 fi
