@@ -14,3 +14,5 @@ find $1 -type d -exec echo {} \; > logrem.txt;
 #find and delete empty folders
 
 find $1 -depth -type d -empty 2>/dev/null -exec rmdir {} \; 
+
+echo [SUCCESS] Empty directories were removed
