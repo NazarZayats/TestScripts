@@ -1,12 +1,12 @@
 #!/bin/bash
 
-if [ -s remlog.txt ];
+if [ -s logrem.txt ];
   then
-    cat remlog.txt | while read line
+    cat logrem.txt | while read line
       do
         if [ -d $line ]; 
         then 
-          echo Dir $line exist; 
+          echo Dir $line exists; 
         else 
           echo Dir $line was removed;
         fi
