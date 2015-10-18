@@ -5,7 +5,6 @@ sql_root="root"
 sql_pass=""
 
 
-
 if [ -s dbdata.txt ];
 then
 
