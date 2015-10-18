@@ -6,16 +6,16 @@ sql_pass=""
 
 
 
-if [ -s dbdata.txt ]
+if [ -s dbdata.txt ];
 then
-  do
+
     cat dbdata.txt | while read line
-    
-    mysql --user="$sql_root" -e "show databases;
-    use test22;
-    show tables;
-    select * from $line; "
-  done
+    do
+      mysql --user="$sql_root" -e "show databases;
+      use test22;
+      show tables;
+      select * from $line; "
+    done
 else [ERROR] Databases were not created
 fi 
 

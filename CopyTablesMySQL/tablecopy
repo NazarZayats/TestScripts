@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 sql_root="root"
 sql_pass=""
 
@@ -8,7 +7,8 @@ sql_pass=""
 mysql --user="$sql_root" -e "create database if not exists test1;
 use test1; 
 create table t1 (name varchar(10), age int);
- create table t2 (color varchar(10), car varchar(50));
+create table t2 (color varchar(10), car varchar(50));
+
 insert into t1 (name, age) values ('Ivan', '22');
 insert into t1 (name, age) values ('Anna', '12');
 insert into t1 (name, age) values ('Ira', '54');
@@ -27,10 +27,11 @@ if [ -s dbdata.txt ]
       do
         
         mysqldump --user $sql_root test1 $line > /var/lib/mysql/test1/$line.sql
-        mysql --user $sql_root test22 $line < /var/lib/mysql/test22/$line.sql
-      
+        mysql --user $sql_root test22 < /var/lib/mysql/test1/$line.sql
+        echo [SUCCESS]Table $line was copied to test22 database
       done
-else echo Datafile is empty  
+    
+else echo [ERROR]Datafile is empty  
 fi   
 
 
