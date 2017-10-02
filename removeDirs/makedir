@@ -1,5 +1,4 @@
 #!/bin/bash
-
 #creating hierarchy of folders for testing
 
 mkdir test #main folder
