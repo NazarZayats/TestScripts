@@ -33,5 +33,3 @@ if [ -s dbdata.txt ]
     
 else echo [ERROR]Datafile is empty  
 fi   
-
-
