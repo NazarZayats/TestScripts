@@ -1,9 +1,7 @@
 #!/bin/bash
 
-
 sql_root="root"
 sql_pass=""
-
 
 if [ -s dbdata.txt ];
 then
@@ -17,4 +15,3 @@ then
     done
 else [ERROR] Databases were not created
 fi 
-
