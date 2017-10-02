@@ -2,4 +2,4 @@
 
 mysql -u $user -p$password;
 use $db;
-select * from tone;
+select * from Tone;
