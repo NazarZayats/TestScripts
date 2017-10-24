@@ -1,16 +1,16 @@
 #!/bin/bash
 
-if [ -s logrem.txt ];
-  then
-    cat logrem.txt | while read line
-      do
-        if [ -d $line ]; 
-        then 
-          echo [PASS]Dir $line exists; 
-        else 
-          echo [PASS]Dir $line was removed;
-        fi
-      done;
-else
-  echo [FAIL]No empty folders were detected;
-fi
+# if [ -s logrem.txt ];
+#   then
+#     cat logrem.txt | while read line
+#       do
+#         if [ -d $line ]; 
+#         then 
+#           echo [PASS]Dir $line exists; 
+#         else 
+#           echo [PASS]Dir $line was removed;
+#         fi
+#       done;
+# else
+#   echo [FAIL]No empty folders were detected;
+# fi
